@@ -1,3 +1,3 @@
-import CartCounter from "./components/CartCounter";
+import CartCounter from "./CartCounter";
 
 export { CartCounter };
