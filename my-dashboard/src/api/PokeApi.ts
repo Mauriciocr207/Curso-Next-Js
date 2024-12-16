@@ -19,14 +19,13 @@ export const getPokemons = async (
   return pokemons;
 };
 
-export const getPokemonById = async (id: string): Promise<Pokemon> => {
+export const getPokemonByIdOrName = async (idOrName: string): Promise<Pokemon> => {
   const pokemon: Pokemon = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${id}`,
+    `https://pokeapi.co/api/v2/pokemon/${idOrName}`,
     {
-      cache: "force-cache",
       next: {
-        revalidate: 60,
-      }
+        revalidate: 10,
+      },
     }
   ).then((res) => res.json());
 

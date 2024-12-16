@@ -31,7 +31,7 @@ export default function PokemonCard({ id, name }: Props) {
           <div className="mt-5">
             <Link
               prefetch
-              href={`/dashboard/pokemon/${id}`}
+              href={`/dashboard/pokemons/${name}`}
               className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100 hover:text-gray-800 hover:bg-white transition-colors"
             >
               Ver más
