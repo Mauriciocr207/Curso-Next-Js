@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { capitalize } from "@/src/utils";
-import gridContent from "@/src/components/pokemons/GridContent";
+import gridContent from "@components/pokemons/GridContent";
 import { Pokemon } from "@/src/interfaces";
 
 interface Props {

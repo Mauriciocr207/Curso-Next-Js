@@ -1,4 +1,4 @@
-import { NotFoundPokemon } from "@/src/components/pokemons";
+import { NotFoundPokemon } from "@components/pokemons";
 
 export default function NotFound() {
   return <NotFoundPokemon/>

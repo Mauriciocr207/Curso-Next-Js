@@ -1,6 +1,6 @@
 "use client";
 
-import { ErrorSvg } from "@/src/components/pokemons";
+import { ErrorSvg } from "@components/pokemons";
 import { useEffect } from "react";
 
 export default function Error({

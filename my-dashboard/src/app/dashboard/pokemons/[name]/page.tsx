@@ -1,5 +1,5 @@
 import { getPokemonByIdOrName, getPokemons } from "@/src/api/PokeApi";
-import PokemonInfo from "@/src/components/pokemons/PokemonInfo";
+import PokemonInfo from "@components/pokemons/PokemonInfo";
 import { capitalize } from "@/src/utils";
 import { notFound } from "next/navigation";
 

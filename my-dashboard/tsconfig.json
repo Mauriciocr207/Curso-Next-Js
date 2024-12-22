@@ -18,8 +18,9 @@
       }
     ],
     "paths": {
+      "@components/*": ["./src/components/*"],
+      "@store/*": ["./src/store/*"],
       "@/*": ["./*"],
-      "@components": ["./src/components"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/dashboard/pokemon/[id]/GridContent.tsz"],

@@ -1,7 +1,7 @@
 import { getPokemonByIdOrName } from "@/src/api/PokeApi";
 import { capitalize } from "@/src/utils";
 import { notFound } from "next/navigation";
-import PokemonInfo from "@/src/components/pokemons/PokemonInfo";
+import PokemonInfo from "@components/pokemons/PokemonInfo";
 
 interface Props {
   params: { id: string };
