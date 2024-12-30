@@ -7,7 +7,7 @@ import {
   initialCounterState,
   set,
 } from "@store/counter/counterSlice";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 interface CounterResponse {
   count: number;
 }
@@ -16,7 +16,7 @@ const getApiCounter = async (): Promise<CounterResponse> =>
   fetch("/api/counter").then((res) => res.json());
 
 export default function CartCounter() {
-  const { count, isReady } = useAppSelector((state) => state.counter);
+  const { count, isLoading } = useAppSelector((state) => state.counter);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function CartCounter() {
 
   return (
     <>
-      {!isReady ? (
+      {isLoading ? (
         <LoaderSpinner />
       ) : (
         <>

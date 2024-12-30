@@ -1,4 +1,4 @@
-import { Pokemon } from "@/src/interfaces";
+import { Pokemon } from "@interfaces/";
 import Image from "next/image";
 
 interface GridItem {
@@ -37,6 +37,7 @@ const gridContent = (pokemon: Pokemon): GridItem[] => {
             width={100}
             height={100}
             alt={`sprite ${pokemon.name}`}
+            priority
           />
 
           <Image
@@ -44,6 +45,7 @@ const gridContent = (pokemon: Pokemon): GridItem[] => {
             width={100}
             height={100}
             alt={`sprite ${pokemon.name}`}
+            priority
           />
         </div>
       ),
@@ -57,6 +59,7 @@ const gridContent = (pokemon: Pokemon): GridItem[] => {
             width={100}
             height={100}
             alt={`sprite ${pokemon.name}`}
+            priority
           />
 
           <Image
@@ -64,6 +67,7 @@ const gridContent = (pokemon: Pokemon): GridItem[] => {
             width={100}
             height={100}
             alt={`sprite ${pokemon.name}`}
+            priority
           />
         </div>
       ),

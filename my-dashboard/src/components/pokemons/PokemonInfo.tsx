@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { capitalize } from "@/src/utils";
 import gridContent from "@components/pokemons/GridContent";
-import { Pokemon } from "@/src/interfaces";
+import { Pokemon } from "@interfaces/";
 
 interface Props {
     pokemon: Pokemon;
@@ -30,6 +30,7 @@ export default function PokemonInfo({pokemon}: Props) {
                 height={150}
                 alt={`Imagen del pokemon ${pokemon.name}`}
                 className="mb-5"
+                priority
               />
 
               <div className="flex flex-wrap">

@@ -3,12 +3,12 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface CounterState {
   count: number;
-  isReady: boolean;
+  isLoading: boolean;
 }
 
 const initialState: CounterState = {
   count: 5,
-  isReady: false,
+  isLoading: true,
 };
 
 export const counterSlice = createSlice({
@@ -16,9 +16,9 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     initialCounterState(state, action: PayloadAction<number>) {
-      if (state.isReady) return;
+      if (!state.isLoading) return;
       state.count = action.payload;
-      state.isReady = true;
+      state.isLoading = false;
     },
     increment: (state) => {
       state.count += 1;
